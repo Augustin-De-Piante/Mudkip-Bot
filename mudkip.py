@@ -14,7 +14,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 
-BOT_PREFIX = ('$')
+BOT_PREFIX = ('YOUR_BOT_PREFIX_HERE')
 OWNERS = [YOUR_DISCORD_ID_HERE]
 BLACKLIST = []
 client = Bot(command_prefix=BOT_PREFIX)
@@ -29,7 +29,7 @@ async def status_task():
         await asyncio.sleep(10)
         await client.change_presence(activity=discord.Game("with Doge_Stig!"))
         await asyncio.sleep(10)
-        await client.change_presence(activity=discord.Game(BOT_PREFIX"help"))
+        await client.change_presence(activity=discord.Game("YOUR_BOT_PREFIX_HEREhelp"))
         await asyncio.sleep(10)
         await client.change_presence(activity=discord.Game("with humans!"))
         await asyncio.sleep(10)
