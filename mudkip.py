@@ -15,7 +15,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 
 BOT_PREFIX = ('$')
-OWNERS = [669884399092891668]
+OWNERS = [YOUR_DISCORD_ID_HERE]
 BLACKLIST = []
 client = Bot(command_prefix=BOT_PREFIX)
 
@@ -29,7 +29,7 @@ async def status_task():
         await asyncio.sleep(10)
         await client.change_presence(activity=discord.Game("with Doge_Stig!"))
         await asyncio.sleep(10)
-        await client.change_presence(activity=discord.Game("BOT_PREFIX help"))
+        await client.change_presence(activity=discord.Game(BOT_PREFIX"help"))
         await asyncio.sleep(10)
         await client.change_presence(activity=discord.Game("with humans!"))
         await asyncio.sleep(10)
@@ -144,21 +144,9 @@ async def eight_ball(context, *args):
         embed = discord.Embed(title='**My Answer:** ', description='{0}'.format(answers[randint(0, len(answers))]), color=0x00FF00)
         embed.set_footer(text='Question asked by: {0} • Ask your own now!'.format(context.message.author))
         await context.message.channel.send(embed=embed)
-        
+       
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
 
 
 @client.command(name='template', pass_context=True)
