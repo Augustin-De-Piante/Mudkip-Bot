@@ -531,6 +531,8 @@ async def help(context):
         embed.add_field(name='Raid101 - Details how to join Y-Comm Raids.', value='Usage: $raid101', inline=False)
         embed.add_field(name='SysBot - Guide to using a SysBot, in FAQ format.', value='Usage: $sysbot', inline=False)
         embed.add_field(name='Re-Rolling - Detailed instructions for re-rolling a shiny den.', value='Usage: $rerolling', inline=False)
+        embed.add_field(name='BinCon - Converts a decimal input to binary format.', value='Usage: $bincon <number>', inline=False)
+        embed.add_field(name='HexCon - Converts a decimal input to hexadecimal format.', value='Usage: $hexcon <number>', inline=False)
         embed.add_field(name='Help - Gives this menu', value='Usage: $help', inline=False)
         await context.message.channel.send(embed=embed)
 
